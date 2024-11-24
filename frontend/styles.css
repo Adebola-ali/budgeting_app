@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+h1 {
+  font-size: 2rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Center the Content */
+body > h1,
+body > p {
+  text-align: center;
+}
+
+/* Container for the form */
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* Form Styling */
+form {
+  margin-top: 15px;
+}
+
+form input, form select, form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #007acc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005f99;
+}
+
+/* Transaction List */
+#transaction-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#transactions {
+  list-style: none;
+  padding: 0;
+}
+
+#transactions li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+/* Totals Section */
+#totals {
+  background: #eef6ff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#totals h2 {
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+#totals p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+#totals span {
+  font-weight: bold;
+}
+
+#balance {
+  color: #007acc;
+}
+
+#feedback {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: none;
+}
+
+#feedback.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#feedback.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
